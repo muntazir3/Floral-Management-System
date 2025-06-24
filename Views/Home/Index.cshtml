@@ -1,0 +1,816 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="tm-heroslider-area bg-grey">
+    <div class="tm-heroslider-slider">
+        <!-- First Slide -->
+        <div class="tm-heroslider" id="main1" style="background-image: url(/assets/images/38.jpg); background-size:cover; background-position: center;height: 500px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-8 col-12">
+                        <div class="tm-heroslider-contentwrapper pull-left">
+                            <div class="tm-heroslider-content">
+                                <h1 class="text-white">Make Every Occasion Special With us</h1>
+                                <p class="text-white">We’re here to add a touch of elegance and joy to your special moments. Let us help you celebrate life’s precious events with blooms as unique as your memories.</p>
+                                <a asp-controller="home" asp-action="valentine" class="tm-button tm-button-white">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="tm-heroslider" style="background-image: url(/assets/images/main\ 2.jpg);
+                    background-size: cover; background-position: center;
+                    height: 500px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-8 col-12">
+                        <div class="tm-heroslider-contentwrapper">
+                            <div class="tm-heroslider-content">
+                                <h1 class="text-white">Anniversary Bouquet</h1>
+                                <p class="text-white">Celebrate love and make lasting memories with our stunning anniversary bouquets, available now on our website.</p>
+                                <a asp-controller="home" asp-action="anniversary" class="tm-button tm-button-white">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tm-heroslider" style="background-image: url(/assets/images/main\ 4.jpg); background-size: cover; background-position: center; height: 500px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-8 col-12">
+                        <div class="tm-heroslider-contentwrapper">
+                            <div class="tm-heroslider-content">
+                                <h1 class="text-white">Special Birthday Flower’s</h1>
+                                <p class="text-white">Surprise your loved ones with vibrant birthday flowers, ready to order and delivered fresh from our website!</p>
+                                <a asp-controller="home" asp-action="birthday" class="tm-button tm-button-white">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="page-content">
+    <div class="tm-section tm-feature-area bg-grey">
+        <div class="container">
+            <div class="row mt-30-reverse">
+                <div class="col-lg-4 mt-30">
+                    <div class="tm-feature">
+                        <span class="tm-feature-icon">
+                            <img data-pagespeed-lazy-src="/assets/images/icons/icon-free-shipping.png"
+                                 alt="free shipping" src="/assets/images/icons/icon-free-shipping.png"
+                                 onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                 onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </span>
+                        <div class="tm-feature-content">
+                            <h6>Free Shipping</h6>
+                            <p>We provide free shipping for all order over $200.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-30">
+                    <div class="tm-feature">
+                        <span class="tm-feature-icon">
+                            <img data-pagespeed-lazy-src="/assets/images/icons/icon-fast-delivery.png"
+                                 alt="fast delivery" src="/assets/images/icons/icon-fast-delivery.png"
+                                 onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                 onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </span>
+                        <div class="tm-feature-content">
+                            <h6>Fast Delivery</h6>
+                            <p>We always deliver our customers very quickly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-30">
+                    <div class="tm-feature">
+                        <span class="tm-feature-icon">
+                            <img data-pagespeed-lazy-src="/assets/images/icons/icon-247-support.png"
+                                 alt="24/7 Support" src="/assets/images/icons/icon-247-support.png"
+                                 onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                 onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </span>
+                        <div class="tm-feature-content">
+                            <h6>24/7 Support</h6>
+                            <p>We provide support to our customers within 24 hours. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tm-popular-products-area" class="tm-section tm-popular-products-area tm-padding-section bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-12">
+                    <div class="tm-sectiontitle text-center">
+                        <h3>Flower Studio</h3>
+                        <p>
+                            Our popular products are so beautyful to see that the shoppers are easily attracted
+                            to them.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row tm-products-slider">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="tm-product tm-scrollanim">
+                        <div class="tm-product-topside">
+                            <div class="tm-product-images">
+                                <img src="/assets/images/Flower products/Birthday1.png" alt="product 1" class="flowerstd">
+                            </div>
+                            <ul class="tm-product-actions">
+                                <li>
+                                        <button class="add-to-cart" data-id="1" data-name="Lapls" data-price="35"
+                                        data-image="/assets/images/Flower products/Birthday1.png">
+                                        Add to cart
+                                        </button></li>
+                                <li>
+                                    <button data-fancybox data-src="#tm-product-quickview">
+                                        <i class="ion-eye"></i>
+                                    </button>
+                                </li>
+                                <li><a href="#"><i class="ion-heart"></i></a></li>
+                            </ul>
+                            <div class="tm-product-badges">
+                                <span class="tm-product-badges-new">New</span>
+                                <span class="tm-product-badges-sale">Sale</span>
+                            </div>
+                        </div>
+                        <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title"><a href="">Lapls</a></h6>
+                            <div class="tm-ratingbox">
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span><i class="ion-android-star-outline"></i></span>
+                            </div>
+                            <span class="tm-product-price">$35.00</span>
+                            <div class="tm-product-content">
+                                <ul class="tm-product-actions">
+                                   <li>
+                                        <button class="add-to-cart" data-id="1" data-name="Lapls" data-price="35"
+                                                data-image="/assets/images/Flower products/Birthday1.png">
+                                            Add to cart
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button data-fancybox data-src="#tm-product-quickview">
+                                            <i class="ion-eye"></i>
+                                        </button>
+                                    </li>
+                                    <li><a href="#"><i class="ion-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="tm-product tm-scrollanim">
+                        <div class="tm-product-topside">
+                            <div class="tm-product-images">
+                                <img src="/assets/images/Flower products/Anniversary1.jpg" alt="product image" class="flowerstd">
+                            </div>
+                            <ul class="tm-product-actions">
+                                <li>
+                                    <button class="add-to-cart" data-id="2" data-name="Marquertle" data-price="29.99"
+                                            data-image="/assets/images/Flower products/Anniversary1.jpg">
+                                        Add to cart
+                                    </button>
+                                <li>
+                                    <button data-fancybox data-src="#tm-product-quickview">
+                                        <i class="ion-eye"></i>
+                                    </button>
+                                </li>
+                                <li><a href="#"><i class="ion-heart"></i></a></li>
+                            </ul>
+                            <div class="tm-product-badges">
+                                <span class="tm-product-badges-sale">Sale</span>
+                            </div>
+                        </div>
+                        <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title"><a href="">Marquertle</a></h6>
+                            <div class="tm-ratingbox">
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span><i class="ion-android-star-outline"></i></span>
+                            </div>
+                            <span class="tm-product-price">$29.99</span>
+                            <div class="tm-product-content">
+
+                                <ul class="tm-product-actions">
+                                    <li>
+                                        <button class="add-to-cart" data-id="2" data-name="Marquertle" data-price="29.99"
+                                                data-image="/assets/images/Flower products/Anniversary1.jpg">
+                                            Add to cart
+                                        </button>
+                                    <li>
+                                        <button data-fancybox data-src="#tm-product-quickview">
+                                            <i class="ion-eye"></i>
+                                        </button>
+                                    </li>
+                                    <li><a href="#"><i class="ion-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="tm-product tm-scrollanim">
+                        <div class="tm-product-topside">
+                            <div class="tm-product-images">
+                                <img src="/assets/images/Flower products/Congratulation2.webp" alt="product image" class="flowerstd">
+
+                            </div>
+                            <ul class="tm-product-actions">
+                                <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                <li>
+                                    <button data-fancybox data-src="#tm-product-quickview">
+                                        <i class="ion-eye"></i>
+                                    </button>
+                                </li>
+                                <li><a href="#"><i class="ion-heart"></i></a></li>
+                            </ul>
+                            <div class="tm-product-badges">
+                                <span class="tm-product-badges-soldout">Sold out</span>
+                            </div>
+                        </div>
+                        <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title"><a href="">Charmed</a></h6>
+                            <div class="tm-ratingbox">
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span><i class="ion-android-star-outline"></i></span>
+                            </div>
+                            <span class="tm-product-price">$55.00</span>
+                            <div class="tm-product-content">
+
+                                <ul class="tm-product-actions">
+                                    <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                    <li>
+                                        <button data-fancybox data-src="#tm-product-quickview">
+                                            <i class="ion-eye"></i>
+                                        </button>
+                                    </li>
+                                    <li><a href="#"><i class="ion-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="tm-product tm-scrollanim">
+                        <div class="tm-product-topside">
+                            <div class="tm-product-images">
+                                <img src="/assets/images/Flower products/Birthday2.jpg" w="500px" h="500px" alt="product image" class="flowerstd">
+                            </div>
+                            <ul class="tm-product-actions">
+                                <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                <li>
+                                    <button data-fancybox data-src="#tm-product-quickview">
+                                        <i class="ion-eye"></i>
+                                    </button>
+                                </li>
+                                <li><a href="#"><i class="ion-heart"></i></a></li>
+                            </ul>
+                            <div class="tm-product-badges">
+                                <span class="tm-product-badges-new">New</span>
+                            </div>
+                        </div>
+                        <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title"><a href="">Delight</a></h6>
+                            <div class="tm-ratingbox">
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span><i class="ion-android-star-outline"></i></span>
+                            </div>
+                            <span class="tm-product-price">$30.00</span>
+                            <div class="tm-product-content">
+                                <ul class="tm-product-actions">
+                                    <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                    <li>
+                                        <button data-fancybox data-src="#tm-product-quickview">
+                                            <i class="ion-eye"></i>
+                                        </button>
+                                    </li>
+                                    <li><a href="#"><i class="ion-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="tm-product tm-scrollanim">
+                        <div class="tm-product-topside">
+                            <div class="tm-product-images">
+                                <img src="/assets/images/Flower products/Anniversary2.jpg" alt="product image" class="flowerstd">
+
+                            </div>
+                            <ul class="tm-product-actions">
+                                <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                <li>
+                                    <button data-fancybox data-src="#tm-product-quickview">
+                                        <i class="ion-eye"></i>
+                                    </button>
+                                </li>
+                                <li><a href="#"><i class="ion-heart"></i></a></li>
+                            </ul>
+                            <div class="tm-product-badges">
+                                <span class="tm-product-badges-new">New</span>
+                                <span class="tm-product-badges-sale">Sale</span>
+                            </div>
+                        </div>
+                        <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title"><a href="">Adore</a></h6>
+                            <div class="tm-ratingbox">
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span><i class="ion-android-star-outline"></i></span>
+                            </div>
+                            <span class="tm-product-price">$48.00</span>
+                            <div class="tm-product-content">
+
+                                <ul class="tm-product-actions">
+                                    <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                    <li>
+                                        <button data-fancybox data-src="#tm-product-quickview">
+                                            <i class="ion-eye"></i>
+                                        </button>
+                                    </li>
+                                    <li><a href="#"><i class="ion-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="tm-product tm-scrollanim">
+                        <div class="tm-product-topside">
+                            <div class="tm-product-images">
+                                <img src="/assets/images/Flower products/Birthday4.png" alt="product image" class="flowerstd">
+                            </div>
+                            <ul class="tm-product-actions">
+                                <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                <li>
+                                    <button data-fancybox data-src="#tm-product-quickview">
+                                        <i class="ion-eye"></i>
+                                    </button>
+                                </li>
+                                <li><a href="#"><i class="ion-heart"></i></a></li>
+                            </ul>
+                            <div class="tm-product-badges">
+                                <span class="tm-product-badges-sale">Sale</span>
+                            </div>
+                        </div>
+                        <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title"><a href="">Enamour</a></h6>
+                            <div class="tm-ratingbox">
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span><i class="ion-android-star-outline"></i></span>
+                            </div>
+                            <span class="tm-product-price">$48.00</span>
+                            <div class="tm-product-content">
+
+                                <ul class="tm-product-actions">
+                                    <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                    <li>
+                                        <button data-fancybox data-src="#tm-product-quickview">
+                                            <i class="ion-eye"></i>
+                                        </button>
+                                    </li>
+                                    <li><a href="#"><i class="ion-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div id="tm-latest-products-area" class="tm-section tm-latest-products-area tm-padding-section bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-12">
+                    <div class="tm-sectiontitle text-center">
+                        <h3>NEW Fresh Flowers</h3>
+                        <p>
+                            Our popular products are so beautyful to see that the shoppers are easily attracted
+                            to them.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-50-reverse">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-50">
+                    <div class="tm-product tm-scrollanim">
+                        <div class="tm-product-topside">
+                            <div class="tm-product-images">
+                                <img data-pagespeed-lazy-src="/assets/images/Flower products/Birthday3.webp"
+                                     alt="product image" src="/assets/images/Flower products/Birthday3.webp"
+                                     onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                     onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" class="newflower">
+
+                            </div>
+                            <ul class="tm-product-actions">
+                                <li><a asp-controller="Home" asp-action="Cart"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                
+                                <li><a href="#"><i class="ion-heart"></i></a></li>
+                            </ul>
+                            <div class="tm-product-badges">
+                                <span class="tm-product-badges-new">New</span>
+                                <span class="tm-product-badges-sale">Sale</span>
+                            </div>
+                        </div>
+                        <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title"><a href="">Beatitude</a></h6>
+                            <div class="tm-ratingbox">
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span><i class="ion-android-star-outline"></i></span>
+                            </div>
+                            <span class="tm-product-price">$29.85</span>
+                            <div class="tm-product-content">
+                                <ul class="tm-product-actions">
+                                    <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                  
+                                    <li><a href="#"><i class="ion-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-50">
+                    <div class="tm-product tm-scrollanim">
+                        <div class="tm-product-topside">
+                            <div class="tm-product-images">
+                                <img data-pagespeed-lazy-src="assets/images/Flower products/Anniversary3.webp"
+                                     alt="product image" src="assets/images/Flower products/Anniversary3.webp"
+                                     onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                     onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" class="newflower">
+                            </div>
+                            <ul class="tm-product-actions">
+                                <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                               
+                                <li><a href="#"><i class="ion-heart"></i></a></li>
+                            </ul>
+                            <div class="tm-product-badges">
+                                <span class="tm-product-badges-new">New</span>
+                            </div>
+                        </div>
+                        <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title"><a href="">Fall in Love</a></h6>
+                            <div class="tm-ratingbox">
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span><i class="ion-android-star-outline"></i></span>
+                            </div>
+                            <span class="tm-product-price">$28.00</span>
+                            <div class="tm-product-content">
+
+                                <ul class="tm-product-actions">
+                                    <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                   
+                                    <li><a href="#"><i class="ion-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-50">
+                    <div class="tm-product tm-scrollanim">
+                        <div class="tm-product-topside">
+                            <div class="tm-product-images">
+                                <img data-pagespeed-lazy-src="assets/images/Flower products/Valentine3.jpg"
+                                     alt="product image" src="assets/images/Flower products/Valentine3.jpg"
+                                     onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                     onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" class="newflower">
+
+                            </div>
+                            <ul class="tm-product-actions">
+                              
+                                <li><a href="#"><i class="ion-heart"></i></a></li>
+                            </ul>
+                            <div class="tm-product-badges">
+                                <span class="tm-product-badges-new">New</span>
+                                <span class="tm-product-badges-soldout">Sold out</span>
+                            </div>
+                        </div>
+                        <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title"><a href="">Always & Forever</a></h6>
+                            <div class="tm-ratingbox">
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span><i class="ion-android-star-outline"></i></span>
+                            </div>
+                            <span class="tm-product-price">$22.00</span>
+                            <div class="tm-product-content">
+
+                                <ul class="tm-product-actions">
+                                    <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                   
+                                    <li><a href="#"><i class="ion-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-50">
+                    <div class="tm-product tm-scrollanim">
+                        <div class="tm-product-topside">
+                            <div class="tm-product-images">
+                                <img data-pagespeed-lazy-src="assets/images/products/new-prod-4.jpg"
+                                     alt="product image" src="assets/images/Flower products/Congratulation3.webp"
+                                     onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                     onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" class="newflower">
+                            </div>
+                            <ul class="tm-product-actions">
+                                <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                               
+                                <li><a href="#"><i class="ion-heart"></i></a></li>
+                            </ul>
+                            <div class="tm-product-badges">
+                                <span class="tm-product-badges-new">New</span>
+                            </div>
+                        </div>
+                        <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title"><a href="">Glorious</a></h6>
+                            <div class="tm-ratingbox">
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                <span><i class="ion-android-star-outline"></i></span>
+                            </div>
+                            <span class="tm-product-price">$20.00</span>
+                            <div class="tm-product-content">
+                                <ul class="tm-product-actions">
+                                    <li><a href="#"><i class="ion-android-cart"></i> Add to cart</a></li>
+                                   
+                                    <li><a href="#"><i class="ion-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tm-product-loadmore text-center mt-50">
+                <a asp-controller="Home" asp-action="bouquet" class="tm-button">All Products</a>
+            </div>
+        </div>
+    </div>
+    <div class="tm-section tm-offer-area tm-padding-section bg-grey">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12 order-2 order-lg-1">
+                    <div class="tm-offer-content">
+                        <h6>Sprinkle Joy, Save Big</h6>
+                        <h1>Floral Deals Just for You!<span>$20</span> only</h1>
+                        <div class="tm-countdown" data-countdown="2024/12/12"></div>
+                        <a href="" class="tm-button">Shop now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 order-1 order-lg-2">
+                    <div class="tm-offer-image">
+                        <img class="tm-offer" data-pagespeed-lazy-src="assets/images/products/hanging-earrings.png"
+                             alt="offer image" src="assets/images/Flower products/Valentine1-removebg-preview.png"
+                             onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                             onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<div class="tm-product-quickview" id="tm-product-quickview">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-10 col-12">
+                <div class="tm-product-quickview-inner">
+                    <div class="tm-prodetails">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-10 col-12">
+                                <div class="tm-prodetails-images">
+                                    <div class="tm-prodetails-largeimages">
+
+
+                                        <div class="tm-prodetails-largeimage">
+                                            <img src="assets/images/Flower products/Birthday1.png"
+                                                 alt="product image" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                 onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                        </div>
+
+
+                                        <div class="tm-prodetails-largeimage">
+                                            <img src="assets/images/Flower products/Anniversary1.jpg"
+                                                 alt="product image">
+                                        </div>
+
+
+                                        <div class="tm-prodetails-largeimage">
+                                            <img src="assets/images/Flower products/Congratulation2.webp"
+                                                 alt="product image">
+                                        </div>
+
+
+                                        <div class="tm-prodetails-largeimage">
+                                            <img src="assets/images/Flower products/Birthday2.jpg"
+                                                 alt="product image">
+                                        </div>
+
+
+                                        <div class="tm-prodetails-largeimage">
+                                            <img src="assets/images/Flower products/Anniversary2.jpg"
+                                                 alt="product image">
+                                        </div>
+
+
+                                        <div class="tm-prodetails-largeimage">
+                                            <img src="assets/images/Flower products/Birthday4.png"
+                                                 alt="product image">
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="tm-prodetails-thumbnails">
+
+                                        <div class="tm-prodetails-thumbnail">
+                                            <img src="assets/images/Flower products/Birthday1.png"
+                                                 alt="product image">
+                                        </div>
+
+                                        <div class="tm-prodetails-thumbnail">
+                                            <img src="assets/images/Flower products/Anniversary1.jpg"
+                                                 alt="product image">
+                                        </div>
+
+
+                                        <div class="tm-prodetails-thumbnail">
+                                            <img src="assets/images/Flower products/Congratulation2.webp"
+                                                 alt="product image">
+                                        </div>
+
+
+                                        <div class="tm-prodetails-thumbnail">
+                                            <img src="assets/images/Flower products/Birthday2.jpg"
+                                                 alt="product image">
+                                        </div>
+
+
+                                        <div class="tm-prodetails-thumbnail">
+                                            <img src="assets/images/Flower products/Anniversary2.jpg"
+                                                 alt="product image">
+                                        </div>
+
+
+                                        <div class="tm-prodetails-thumbnail">
+                                            <img src="assets/images/Flower products/Birthday4.png"
+                                                 alt="product image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="tm-prodetails-content">
+                                    <h4 class="tm-prodetails-title">Flower’s</h4>
+                                    <span class="tm-prodetails-price"><del>$75.99</del> $59.99</span>
+                                    <div class="tm-ratingbox">
+                                        <span class="is-active">
+                                            <i class="ion-android-star-outline"></i>
+                                        </span>
+                                        <span class="is-active">
+                                            <i class="ion-android-star-outline"></i>
+                                        </span>
+                                        <span class="is-active">
+                                            <i class="ion-android-star-outline"></i>
+                                        </span>
+                                        <span class="is-active">
+                                            <i class="ion-android-star-outline"></i>
+                                        </span>
+                                        <span><i class="ion-android-star-outline"></i></span>
+                                    </div>
+                                    <div class="tm-prodetails-infos">
+                                        <div class="tm-prodetails-singleinfo">
+                                            <b>Product ID : </b>010
+                                        </div>
+                                        <div class="tm-prodetails-singleinfo">
+                                            <b>Category : </b><a href="#"></a>
+                                        </div>
+                                        <div class="tm-prodetails-singleinfo tm-prodetails-tags">
+                                            <b>Tags : </b>
+                                            <ul>
+                                                <li><a href="#">Birthday</a></li>
+                                                <li><a href="#">Anniversary</a></li>
+                                                <li><a href="#">Weddings</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tm-prodetails-singleinfo">
+                                            <b>Available : </b>
+                                            <span class="color-theme">In Stock</span>
+                                        </div>
+                                        <div class="tm-prodetails-singleinfo tm-prodetails-share">
+                                            <b>Share : </b>
+                                            <ul>
+                                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="ion-social-instagram-outline"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="ion-social-skype-outline"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="ion-social-pinterest-outline"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        From classic roses to exotic orchids and seasonal blooms, we offer an
+                                        array of choices to suit every taste and style.
+                                    </p>
+                                    <div class="tm-prodetails-quantitycart">
+                                        <h6>Quantity :</h6>
+                                        <div class="tm-quantitybox">
+                                            <input type="text" value="1">
+                                        </div>
+                                        <a href="#" class="tm-button tm-button-dark">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<button id="back-top-top"><i class="ion-arrow-up-c"></i></button>
+
+<script>
+    $(document).on('click', '.add-to-cart', function () {
+        const bouquetId = $(this).data('id');  // Get product ID
+        const name = $(this).data('name');     // Get product name
+        const price = $(this).data('price');   // Get product price
+        const image = $(this).data('image');   // Get product image path
+        const quantity = 1;                    // Default quantity is 1
+
+        // Send product details to the server
+        $.ajax({
+            url: '/Home/AddToCart',            // Backend method to handle the cart
+            method: 'POST',
+            data: { bouquetId, name, price, image, quantity }, // Send data
+            success: function (response) {
+                if (response.success) {
+                    window.location.href = "/Home/Cart"; // Redirect to Cart page
+                } else {
+                    alert(response.message); // Show error message
+                }
+            },
+            error: function () {
+                alert('Error adding product to cart');
+            }
+        });
+    });
+</script>
+
+  

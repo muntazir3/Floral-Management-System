@@ -1,0 +1,398 @@
+﻿
+<!DOCTYPE html>
+<html lang="eng">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home - Floral Shop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" href="~/assets/images/logo__1_-removebg-preview.png">
+    <link rel="shortcut icon" href="~/assets/images/logo__1_-removebg-preview.png">
+    <link rel="stylesheet" href="~/assets/css/vendors/plugins.min.css">
+    <link rel="stylesheet" href="~/assets/css/style_formatted.css">
+
+</head>
+
+<body>
+    <div class="tm-preloader">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="tm-preloader-logo">
+                        <img src="~/assets/images/logo (1).jpg" alt="logo">
+                    </div>
+                    <span class="tm-preloader-progress"></span>
+                </div>
+            </div>
+        </div>
+        <button class="tm-button tm-button-small">Cancel Preloader</button>
+    </div>
+    <div id="wrapper" class="wrapper">
+        <div class="tm-header tm-header-sticky">
+            <div class="tm-header-toparea bg-black">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-12">
+                            <ul class="tm-header-info">
+                                <li><a href="tel:923232323233"><i class="ion-ios-telephone"></i>0323-2323233</a></li>
+                                <li>
+                                    <a href="mailto:info@floralshop.com">
+                                        <i class="ion-android-mail"></i>info@floralshop.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="tm-header-options">
+                                <div class="tm-dropdown tm-header-links">
+                                    <button>My Account</button>
+                                    <ul>
+                                         <li><a asp-controller="Home" asp-action="myaccount">My Account</a></li> 
+                                        <li><a asp-controller="User" asp-action="registerUser">Register</a></li> 
+                                        <li><a asp-controller="Home" asp-action="cart">Shopping Cart</a></li> 
+                                         <li><a asp-controller="Home" asp-action="checkout">Checkout</a></li>
+                                     <li><a asp-controller="admin" asp-action="index">Admin</a></li> 
+                                     </ul>
+                                </div>
+                                <div class="tm-dropdown tm-header-currency">
+                                    <button>PKR</button>
+                                    <ul>
+                                        <li><a href="#">PKR</a></li>
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">JPY</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="tm-dropdown tm-header-language">
+                                    <button><img src="~/assets/images/flag-english.png" alt="language">English</button>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="~/assets/images/flag-english.png"
+                                                     alt="language">English
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-header-middlearea bg-white">
+                <div class="container">
+                    <div class="tm-mobilenav"></div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-6 order-1 order-lg-1">
+                            <a href="index.html" class="tm-header-logo">
+                                <img src="~/assets/images/logo (1).jpg" alt="surose">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-12 order-3 order-lg-2">
+                            <form class="tm-header-search">
+                                <input type="text" placeholder="Search product...">
+                                <button><i class="ion-android-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-6 order-2 order-lg-3">
+                            <ul class="tm-header-icons">
+                                <li>
+                                    <a asp-controller="home" asp-action="wishlist">
+                                        <i class="ion-android-favorite-outline"></i><span>0</span>
+                                    </a>
+                                </li>
+                                <li><a asp-controller="home" asp-action="cart"><i class="ion-bag"></i><span>0</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-header-bottomarea bg-white">
+                <div class="container">
+                    <nav class="tm-header-nav">
+                        <ul>
+                            <li><a class="active" asp-controller="Home" asp-action="Index">Home</a></li>
+
+                            <li class="tm-header-nav-dropdown">
+                                <a href="javascript:void(0)">Occasion</a>
+                                <ul>
+                                    <li><a asp-controller="Home" asp-action="birthday">Birthday</a></li>
+                                    <li><a asp-controller="Home" asp-action="anniversary">Anniversary</a></li>
+                                    <li><a asp-controller="Home" asp-action="wedding">Weddings</a></li>
+                                    <li><a asp-controller="Home" asp-action="valentine">Valentine's Day</a></li>
+                                    <li><a asp-controller="Home" asp-action="congratulation">Congratulation</a></li>
+                                </ul>
+                            </li>
+                            <li><a asp-controller="Home" asp-action="bouquet">Bouquet</a>
+                            <li><a asp-controller="Home" asp-action="about">About</a></li>
+                            <li><a asp-controller="Home" asp-action="contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        @RenderBody()
+
+
+        <div class="tm-footer">
+            <ul id="instafeed" class="tm-instaphotos"></ul>
+            <div class="tm-footer-toparea tm-padding-section">
+                <div class="container">
+                    <div class="widgets widgets-footer row">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-info">
+                                <a class="widget-info-logo" href="index.html">
+                                    <img src="~/assets/images/logo (1).jpg"
+                                         alt="logo">
+                                </a>
+                                <p>From classic roses to exotic orchids and seasonal blooms, we offer an array of choices to suit every taste and style. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-quicklinks">
+                                <h6 class="widget-title">Useful Link</h6>
+                                <ul>
+                                    <li><a asp-controller="home" asp-action="about">About Us</a></li>
+                                    <li><a href="#">Delivery Info</a></li>
+                                    <li><a href="#">Privacy & Policy</a></li>
+                                    <li><a href="#">Returns & Refunds</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a asp-controller="home" asp-action="contact">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-quicklinks">
+                                <h6 class="widget-title">My Account</h6>
+                                <ul>
+                                    <li><a asp-controller="home" asp-action="myaccount">My account</a></li>
+                                    <li><a asp-controller="home" asp-action="cart">Cart</a></li>
+                                    <li><a asp-controller="home" asp-action="wishlist">Wishlist</a></li>
+                                    <li><a href="#">Newsletter</a></li>
+                                    <li><a href="#">Check out</a></li>
+                                    <li><a href="#">Frequently Questions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-newsletter">
+                                <h6 class="widget-title">Join Our Newsletter</h6>
+                                <p>
+                                    Get Business news, tip and solutions to
+                                    your problems from our experts.
+                                </p>
+                                <form id="tm-mailchimp-form" class="widget-newsletter-form">
+                                    <input id="mc-email" type="text" placeholder="Enter email address">
+                                    <button id="mc-submit" type="submit" class="tm-button">
+                                        Subscribe Now
+                                        <b></b>
+                                    </button>
+                                </form>
+                                <div class="tm-mailchimp-alerts">
+                                    <div class="tm-mailchimp-submitting"></div>
+                                    <div class="mailchimp-success"></div>
+                                    <div class="tm-mailchimp-error"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-footer-bottomarea">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <p class="tm-footer-copyright">© 2024. Designed by Floral Shop</p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="tm-footer-payment">
+                                <img src="~/assets/images/payment-methods.png" alt="payment methods">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tm-product-quickview" id="tm-product-quickview">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9 col-lg-10 col-12">
+                        <div class="tm-product-quickview-inner">
+                            <div class="tm-prodetails">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-10 col-12">
+                                        <div class="tm-prodetails-images">
+                                            <div class="tm-prodetails-largeimages">
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-1.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-2.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-3.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-4.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-6.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-6.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                            </div>
+                                            <div class="tm-prodetails-thumbnails">
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-1-thumb.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-2-thumb.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-3-thumb.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-4-thumb.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-5-thumb.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img data-pagespeed-lazy-src="~/assets/images/products/product-image-6-thumb.jpg"
+                                                         alt="product image"
+                                                         src="~/assets/images/pagespeed_static/1.JiBnMqyl6S.gif"
+                                                         onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                                                         onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="tm-prodetails-content">
+                                            <h4 class="tm-prodetails-title">Stylist daimond ring</h4>
+                                            <span class="tm-prodetails-price"><del>$75.99</del> $59.99</span>
+                                            <div class="tm-ratingbox">
+                                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                                <span class="is-active"><i class="ion-android-star-outline"></i></span>
+                                                <span><i class="ion-android-star-outline"></i></span>
+                                            </div>
+                                            <div class="tm-prodetails-infos">
+                                                <div class="tm-prodetails-singleinfo">
+                                                    <b>Product ID : </b>010
+                                                </div>
+                                                <div class="tm-prodetails-singleinfo">
+                                                    <b>Category : </b><a href="#">Ring</a>
+                                                </div>
+                                                <div class="tm-prodetails-singleinfo tm-prodetails-tags">
+                                                    <b>Tags : </b>
+                                                    <ul>
+                                                        <li><a href="#">bracelets</a></li>
+                                                        <li><a href="#">diamond</a></li>
+                                                        <li><a href="#">ring</a></li>
+                                                        <li><a href="#">necklaces</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tm-prodetails-singleinfo">
+                                                    <b>Available : </b>
+                                                    <span class="color-theme">In Stock</span>
+                                                </div>
+                                                <div class="tm-prodetails-singleinfo tm-prodetails-share">
+                                                    <b>Share : </b>
+                                                    <ul>
+                                                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                                        <li>
+                                                            <a href="#"><i class="ion-social-instagram-outline"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="ion-social-skype-outline"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="ion-social-pinterest-outline"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis quemi
+                                                dolor, malesuada id metus a, mattis eleifend elit. Nullam pharetra
+                                                consequat ex in dapibus. Vestibulum ante ipsum primis in faucibus
+                                                orciluctus curae.
+                                            </p>
+                                            <div class="tm-prodetails-quantitycart">
+                                                <h6>Quantity :</h6>
+                                                <div class="tm-quantitybox">
+                                                    <input type="text" value="1">
+                                                </div>
+                                                <a href="#" class="tm-button tm-button-dark">Add To Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="back-top-top"><i class="ion-arrow-up-c"></i></button>
+    </div>
+
+    <script src="~/assets/js/vendors/plugins.min.js"></script>
+
+    <script src="~/assets/js/main.js"></script>
+</body>
+
+</html>
+

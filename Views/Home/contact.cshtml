@@ -1,0 +1,91 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="tm-breadcrumb-area tm-padding-section bg-grey" style="background-image: url('/assets/images/breadcrumb-bg.jpg'); background-size: cover; background-position: center; height: 250px;">
+    <div class="container">
+        <div class="tm-breadcrumb">
+            <h2>Contact Us</h2>
+        </div>
+    </div>
+</div>
+<main class="page-content">
+
+    <div class="tm-section tm-contact-area tm-padding-section bg-white">
+        <div class="container">
+            <div class="tm-contact-blocks">
+                <div class="row mt-30-reverse justify-content-center">
+                    <div class="col-lg-4 col-md-6  mt-30">
+                        <div class="tm-contact-block text-center">
+                            <i class="ion-android-call"></i>
+                            <h6>Call Us</h6>
+                            <p>Phone : <a href="tel:+92312-3456789">0323-2323233</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  mt-30">
+                        <div class="tm-contact-block text-center">
+                            <i class="ion-location"></i>
+                            <h6>Our Location</h6>
+                            <p>Shop # 101,Flower Market, Saddar Town,Karachi.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  mt-30">
+                        <div class="tm-contact-block text-center">
+                            <i class="ion-email"></i>
+                            <h6>Email</h6>
+                            <p><a href="mailto:yusra2304d@aptechgdn.net">info@floralshop.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-contact-forms tm-padding-section-top">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="tm-sectiontitle text-center">
+                            <h3>SEND US A MESSAGE</h3>
+                            <p>
+                                You can contact us for any of your requirements. We’ll help you meet your needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form id="tm-contactform" action="https://thememarch.com/demo/html/surose/surose/~/assets/php/mailer.php" class="tm-contact-forminner tm-form" method="POST">
+                            <div class="tm-form-inner">
+                                <div class="tm-form-field tm-form-fieldhalf">
+                                    <label for="contact-form-name">Name</label>
+                                    <input type="text" id="contact-form-name" placeholder="Your name here" name="name" required>
+                                </div>
+                                <div class="tm-form-field tm-form-fieldhalf">
+                                    <label for="contact-form-email">Email</label>
+                                    <input type="email" id="contact-form-email" placeholder="surose@example.com" name="email" required>
+                                </div>
+                                <div class="tm-form-field tm-form-fieldhalf">
+                                    <label for="contact-form-phone">Phone</label>
+                                    <input type="text" id="contact-form-phone" placeholder="Your phone number here" name="phone" required>
+                                </div>
+                                <div class="tm-form-field tm-form-fieldhalf">
+                                    <label for="contact-form-subject">Subject</label>
+                                    <input type="text" id="contact-form-subject" placeholder="Your subjert" name="subject">
+                                </div>
+                                <div class="tm-form-field">
+                                    <label for="contact-form-message">Message</label>
+<textarea cols="30" rows="5" id="contact-form-message" placeholder="Write your message" name="message"></textarea>
+                                </div>
+                                <div class="tm-form-field text-center">
+                                    <button type="submit" class="tm-button tm-button-block">
+                                        Send
+                                        Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-messages"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
